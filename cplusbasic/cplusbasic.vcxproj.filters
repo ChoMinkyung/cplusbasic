@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="소스 파일">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="헤더 파일">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="리소스 파일">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="소스 파일\20230525">
+      <UniqueIdentifier>{0fc57656-1071-43c7-91fa-92d62165a718}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\20230526">
+      <UniqueIdentifier>{eb892da3-8e5b-44a1-a274-bc0b253c7bbf}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="20230525_Q1.cpp">
+      <Filter>소스 파일\20230525</Filter>
+    </ClCompile>
+    <ClCompile Include="20230525_Q2.cpp">
+      <Filter>소스 파일\20230525</Filter>
+    </ClCompile>
+    <ClCompile Include="20230525_Q3.cpp">
+      <Filter>소스 파일\20230525</Filter>
+    </ClCompile>
+    <ClCompile Include="20230525_Q4.cpp">
+      <Filter>소스 파일\20230525</Filter>
+    </ClCompile>
+    <ClCompile Include="20230526.cpp">
+      <Filter>소스 파일\20230526</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
