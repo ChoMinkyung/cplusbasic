@@ -21,9 +21,6 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="main.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
     <ClCompile Include="20230525_Q1.cpp">
       <Filter>소스 파일\20230525</Filter>
     </ClCompile>
@@ -40,6 +37,15 @@
       <Filter>소스 파일\20230526</Filter>
     </ClCompile>
     <ClCompile Include="20230526_Q1.cpp">
+      <Filter>소스 파일\20230526</Filter>
+    </ClCompile>
+    <ClCompile Include="20230526_Q2.cpp">
+      <Filter>소스 파일\20230526</Filter>
+    </ClCompile>
+    <ClCompile Include="20230526_Q3.cpp">
+      <Filter>소스 파일\20230526</Filter>
+    </ClCompile>
+    <ClCompile Include="20230526_Q4.cpp">
       <Filter>소스 파일\20230526</Filter>
     </ClCompile>
   </ItemGroup>
