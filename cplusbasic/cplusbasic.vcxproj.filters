@@ -25,6 +25,9 @@
     <Filter Include="소스 파일\20230531">
       <UniqueIdentifier>{ab8f4762-3f61-4c4b-8b10-c378b40d6af1}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\20230601">
+      <UniqueIdentifier>{00118edf-5955-489d-ac81-0858637962c6}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="20230525_Q1.cpp">
@@ -81,7 +84,25 @@
     <ClCompile Include="20230529_Q3.cpp">
       <Filter>소스 파일\20230529</Filter>
     </ClCompile>
-    <ClCompile Include="20230531_Q4.cpp">
+    <ClCompile Include="20230601_Q1.cpp">
+      <Filter>소스 파일\20230601</Filter>
+    </ClCompile>
+    <ClCompile Include="20230601_Q2.cpp">
+      <Filter>소스 파일\20230601</Filter>
+    </ClCompile>
+    <ClCompile Include="20230529_Q5.cpp">
+      <Filter>소스 파일\20230529</Filter>
+    </ClCompile>
+    <ClCompile Include="20230601.cpp">
+      <Filter>소스 파일\20230601</Filter>
+    </ClCompile>
+    <ClCompile Include="20230601_Q3.cpp">
+      <Filter>소스 파일\20230601</Filter>
+    </ClCompile>
+    <ClCompile Include="20230601_Q4.cpp">
+      <Filter>소스 파일\20230601</Filter>
+    </ClCompile>
+    <ClCompile Include="20230529_Q4.cpp">
       <Filter>소스 파일\20230529</Filter>
     </ClCompile>
   </ItemGroup>
