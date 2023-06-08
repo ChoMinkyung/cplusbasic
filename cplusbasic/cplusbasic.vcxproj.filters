@@ -28,6 +28,15 @@
     <Filter Include="소스 파일\20230601">
       <UniqueIdentifier>{00118edf-5955-489d-ac81-0858637962c6}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\20230602">
+      <UniqueIdentifier>{aa586bb5-b21b-4ab5-a1e7-0e5466d9a5f5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\20230605">
+      <UniqueIdentifier>{0130afe4-cfe3-4eb5-89ff-b354b1fff226}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\20230607">
+      <UniqueIdentifier>{1549b8df-6d36-4b12-9b67-97f5369272c6}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="20230525_Q1.cpp">
@@ -105,5 +114,67 @@
     <ClCompile Include="20230529_Q4.cpp">
       <Filter>소스 파일\20230529</Filter>
     </ClCompile>
+    <ClCompile Include="20230602_Q1.cpp">
+      <Filter>소스 파일\20230602</Filter>
+    </ClCompile>
+    <ClCompile Include="20230602_Q2.cpp">
+      <Filter>소스 파일\20230602</Filter>
+    </ClCompile>
+    <ClCompile Include="20230602.cpp">
+      <Filter>소스 파일\20230602</Filter>
+    </ClCompile>
+    <ClCompile Include="20230602_Q3.cpp">
+      <Filter>소스 파일\20230602</Filter>
+    </ClCompile>
+    <ClCompile Include="20230605_Q1.cpp">
+      <Filter>소스 파일\20230605</Filter>
+    </ClCompile>
+    <ClCompile Include="20230605.cpp">
+      <Filter>소스 파일\20230605</Filter>
+    </ClCompile>
+    <ClCompile Include="20230605_Q2.cpp">
+      <Filter>소스 파일\20230605</Filter>
+    </ClCompile>
+    <ClCompile Include="20230605.c">
+      <Filter>소스 파일\20230605</Filter>
+    </ClCompile>
+    <ClCompile Include="20230605_Q3.cpp">
+      <Filter>소스 파일\20230605</Filter>
+    </ClCompile>
+    <ClCompile Include="20230607_Q1.cpp">
+      <Filter>소스 파일\20230607</Filter>
+    </ClCompile>
+    <ClCompile Include="20230607_Q2.cpp">
+      <Filter>소스 파일\20230607</Filter>
+    </ClCompile>
+    <ClCompile Include="stock00.cpp">
+      <Filter>소스 파일\20230607</Filter>
+    </ClCompile>
+    <ClCompile Include="20230607.cpp">
+      <Filter>소스 파일\20230607</Filter>
+    </ClCompile>
+    <ClCompile Include="stock10.cpp">
+      <Filter>소스 파일\20230607</Filter>
+    </ClCompile>
+    <ClCompile Include="20230607_Q3.cpp">
+      <Filter>소스 파일\20230607</Filter>
+    </ClCompile>
+    <ClCompile Include="20230607_Q4.c">
+      <Filter>소스 파일\20230607</Filter>
+    </ClCompile>
+    <ClCompile Include="IntStack.c">
+      <Filter>소스 파일\20230607</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stock10.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="stock00.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="IntStack.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
