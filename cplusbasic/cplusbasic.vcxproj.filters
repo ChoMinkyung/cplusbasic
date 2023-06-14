@@ -37,6 +37,18 @@
     <Filter Include="소스 파일\20230607">
       <UniqueIdentifier>{1549b8df-6d36-4b12-9b67-97f5369272c6}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\20230608">
+      <UniqueIdentifier>{78510365-e608-47cd-bf47-e2945d7ba7eb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\20230609">
+      <UniqueIdentifier>{61370296-319b-4203-8051-8006d077ae42}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\20230612">
+      <UniqueIdentifier>{e4a913bd-6fec-493c-bf54-a9361fcbf065}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\20230614">
+      <UniqueIdentifier>{d1adb1da-b30f-4a98-a4f7-48ab0516e300}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="20230525_Q1.cpp">
@@ -165,6 +177,87 @@
     <ClCompile Include="IntStack.c">
       <Filter>소스 파일\20230607</Filter>
     </ClCompile>
+    <ClCompile Include="20230608_Q1.cpp">
+      <Filter>소스 파일\20230608</Filter>
+    </ClCompile>
+    <ClCompile Include="20230608_Q2.cpp">
+      <Filter>소스 파일\20230608</Filter>
+    </ClCompile>
+    <ClCompile Include="20230608.cpp">
+      <Filter>소스 파일\20230608</Filter>
+    </ClCompile>
+    <ClCompile Include="stock20.cpp">
+      <Filter>소스 파일\20230608</Filter>
+    </ClCompile>
+    <ClCompile Include="20230608_Q3_account.cpp">
+      <Filter>소스 파일\20230608</Filter>
+    </ClCompile>
+    <ClCompile Include="20230608_Q3.cpp">
+      <Filter>소스 파일\20230608</Filter>
+    </ClCompile>
+    <ClCompile Include="20230608_Q3_move.cpp">
+      <Filter>소스 파일\20230608</Filter>
+    </ClCompile>
+    <ClCompile Include="20230608_Q4.cpp">
+      <Filter>소스 파일\20230608</Filter>
+    </ClCompile>
+    <ClCompile Include="20230608_Q4_IntQueue.cpp">
+      <Filter>소스 파일\20230608</Filter>
+    </ClCompile>
+    <ClCompile Include="20230609_Q1.cpp">
+      <Filter>소스 파일\20230609</Filter>
+    </ClCompile>
+    <ClCompile Include="memo.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="20230609.cpp">
+      <Filter>소스 파일\20230609</Filter>
+    </ClCompile>
+    <ClCompile Include="mytime0.cpp">
+      <Filter>소스 파일\20230609</Filter>
+    </ClCompile>
+    <ClCompile Include="20230609_Q2_vector.cpp">
+      <Filter>소스 파일\20230609</Filter>
+    </ClCompile>
+    <ClCompile Include="20230609_Q2.cpp">
+      <Filter>소스 파일\20230609</Filter>
+    </ClCompile>
+    <ClCompile Include="20230609_Q3.cpp">
+      <Filter>소스 파일\20230609</Filter>
+    </ClCompile>
+    <ClCompile Include="20230612_Q1.cpp">
+      <Filter>소스 파일\20230612</Filter>
+    </ClCompile>
+    <ClCompile Include="20230612_Q2_Circle2D.cpp">
+      <Filter>소스 파일\20230612</Filter>
+    </ClCompile>
+    <ClCompile Include="20230612_Q2.cpp">
+      <Filter>소스 파일\20230612</Filter>
+    </ClCompile>
+    <ClCompile Include="20230612_Q3.cpp">
+      <Filter>소스 파일\20230612</Filter>
+    </ClCompile>
+    <ClCompile Include="IntStack.cpp">
+      <Filter>소스 파일\20230608</Filter>
+    </ClCompile>
+    <ClCompile Include="Stack.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Queue.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="20230614_Q1.cpp">
+      <Filter>소스 파일\20230614</Filter>
+    </ClCompile>
+    <ClCompile Include="20230614_Q1_Rectangle2D.cpp">
+      <Filter>소스 파일\20230614</Filter>
+    </ClCompile>
+    <ClCompile Include="20230614.cpp">
+      <Filter>소스 파일\20230614</Filter>
+    </ClCompile>
+    <ClCompile Include="20230614_strngbad.cpp">
+      <Filter>소스 파일\20230614</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="stock10.h">
@@ -174,6 +267,39 @@
       <Filter>헤더 파일</Filter>
     </ClInclude>
     <ClInclude Include="IntStack.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="stock20.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="20230608_Q3_account.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="20230608_Q3_move.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="20230608_Q4_IntQueue.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="mytime0.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="20230609_Q2_vector.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="20230612_Q2_Circle2D.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Stack.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Queue.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="20230614_Q1_Rectangle2D.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="20230614_strngbad.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
   </ItemGroup>
