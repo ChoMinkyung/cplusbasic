@@ -4,7 +4,7 @@ class Stack
 private:
 	int max;
 	int prt;
-	int* stk;
+	double* stk;
 public:
 	Stack();
 	Stack(int max);
@@ -17,13 +17,13 @@ public:
 	void PlusSize(int n);
 
 	/* 스택에 데이터 푸시 */
-	int Push(int x);
+	int Push(double x);
 
 	/* 스택에 데이터를 팝 */
-	int Pop(int* x);
+	int Pop(double* x);
 
 	/* 스택에서 데이터를 피크 */
-	int Peek(int* x);
+	int Peek(double* x);
 
 	/* 스택 비우기 */
 	void Clear();
@@ -41,12 +41,15 @@ public:
 	int IsFull();
 
 	/* 스택에서 검색 */
-	int Search(int x);
+	int Search(double x);
 
 	/* 모든 데이터 출력 */
 	void Print();
 
+	double Print(int i);
+
 	/* 스택 종료 */
 	void Terminate();
+
 };
 

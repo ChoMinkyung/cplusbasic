@@ -1,4 +1,6 @@
 #pragma once
+#include "20230614_Q2_MyPoint.h"
+
 class Rectangle2D
 {
 private:
@@ -25,5 +27,6 @@ public:
 	bool contains(const Rectangle2D& r);
 	bool overlaps(const Rectangle2D& r);
 
+	friend bool contains(const Rectangle2D& r, const MyPoint& p);
 };
 

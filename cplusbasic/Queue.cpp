@@ -11,7 +11,7 @@ Queue::Queue(int max)
 {
 	front = rear = num = 0;
 
-	que = new int[sizeof(int) * max];
+	que = new double[sizeof(double) * max];
 	if (que == NULL)
 	{
 		max = 0;
@@ -29,7 +29,7 @@ void Queue::PlusNum(int n)
 	num += n;
 }
 
-int Queue::Enque(int x)
+int Queue::Enque(double x)
 {
 	if (num >= max) return -1;
 	else
@@ -42,7 +42,7 @@ int Queue::Enque(int x)
 	}
 }
 
-int Queue::Deque(int* x)
+int Queue::Deque(double* x)
 {
 	if (num <= 0) return -1;
 	else
@@ -54,7 +54,7 @@ int Queue::Deque(int* x)
 	}
 }
 
-int Queue::Peek(int* x)
+double Queue::Peek(double* x)
 {
 	if (num <= 0) return -1;
 
@@ -87,7 +87,7 @@ int Queue::IsFull()
 	return num >= max;
 }
 
-int Queue::Search(int x)
+int Queue::Search(double x)
 {
 	for (int i = 0; i < num; i++)
 	{
@@ -104,7 +104,7 @@ void Queue::Print()
 	cout << endl;
 }
 
-int Queue::Print(int index)
+double Queue::Print(int index)
 {
 	return que[(index + front) % max];
 }

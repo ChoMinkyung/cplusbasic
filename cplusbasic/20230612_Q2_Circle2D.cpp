@@ -71,3 +71,12 @@ bool Circle2D::overlaps(const Circle2D& circle)
 
     return false;
 }
+
+bool contains(const Circle2D& circle, const MyPoint& point)
+{
+
+    double distance = sqrt(pow(circle.x - point.getX(), 2) + pow(circle.y - point.getY(), 2));
+
+    if (distance > circle.radius) return false;
+    return true;
+}

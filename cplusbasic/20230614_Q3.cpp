@@ -13,12 +13,12 @@ int main()
 {
 	int isNumber[100] = { 0 };
 	int index = 0;
-	int x;
+	double x;
 	Stack OperatorStack(100);
 	Queue PostFixQueue(100);
 
 	ifstream calcFile;
-	calcFile.open("calc.txt");
+	calcFile.open("calc2.txt");
 	if (!calcFile.is_open())
 	{
 		cout << "파일을 열 수 없습니다." << endl;
@@ -30,23 +30,40 @@ int main()
 	double number = 0;
 	double number_count = 1;
 	int while_count = 0;
+	int number_double = 0;
+	int negative = 0;
 	while (calcFile.get(ch))
 	{
-		cout << "현재 : " << ch;
-		if (ch >= '0' && ch <= '9' || ch=='.')
+		cout << ch;
+		if (ch == '.')
+		{
+			number_double = 1;
+			continue;
+		}
+		if (ch >= '0' && ch <= '9')
 		{
 			number = number + number_count * (int)(ch - '0');
 			number_count /= 10;
 		}
 		else
 		{
+			if (ch == '-' && number_count == 1)
+			{
+				negative = 1;
+				continue;
+			}
+
 			if (number_count < 1)
 			{
-				PostFixQueue.Enque((double)number / number_count / 10.0);
+				if (negative) number = -number;
+				if (number_double)PostFixQueue.Enque(number/10.0);
+				else PostFixQueue.Enque((double)number / number_count / 10.0);
 				isNumber[index++] = 1;
 
 				number = 0;
 				number_count = 1;
+				number_double = 0;
+				negative = 0;
 			}
 
 
@@ -68,10 +85,12 @@ int main()
 				}
 				OperatorStack.Pop(&x);
 				while_count--;
+				number_count = 10;
 			}
 			else if (ch == '+' || ch == '-')
 			{
-				for (int i = OperatorStack.getPtr(); i >= 0; i--)
+
+				for (int i = OperatorStack.getPtr() - 1; i >= 0; i--)
 				{
 					if (OperatorStack.getStk(i) == '(')
 					{
@@ -80,7 +99,7 @@ int main()
 
 						break;
 					}
-					else if (OperatorStack.getStk(i) == '*' || OperatorStack.getStk(i) == '/')
+					else
 					{
 						OperatorStack.Pop(&x);
 						PostFixQueue.Enque(x);
@@ -99,6 +118,7 @@ int main()
 			}
 		}
 
+		/*
 		cout << endl << endl;
 
 		cout << "Stack : ";
@@ -115,8 +135,11 @@ int main()
 			else cout << (char)PostFixQueue.Print(i) << " ";
 		}
 		cout << endl << endl;
+		*/
 
 	}
+
+	cout << endl << endl;
 
 	while (!OperatorStack.IsEmpty())
 	{
@@ -131,7 +154,39 @@ int main()
 		else cout << (char)PostFixQueue.Print(i) << " ";
 
 	}
+
+	OperatorStack.Clear();
+
 	cout << endl;
+
+	int i = 0;
+	double n1, n2;
+	int n_operator;
+	while (!PostFixQueue.IsEmpty())
+	{
+		PostFixQueue.Deque(&x);
+		if (isNumber[i] == 1) OperatorStack.Push(x);
+		else
+		{
+			n_operator = x;
+			OperatorStack.Pop(&x);
+			n2 = x;
+			OperatorStack.Pop(&x);
+			n1 = x;
+			if (n_operator == '+') x = n1 + n2;
+			else if (n_operator == '-') x = n1 - n2;
+			else if (n_operator == '*') x = n1 * n2;
+			else if (n_operator == '/') x = n1 / n2;
+
+			cout << endl << "중간계산결과 : " << x << endl;
+			OperatorStack.Push(x);
+		}
+		i++;
+	}
+
+	OperatorStack.Pop(&x);
+
+	cout << endl << "Result : " << x << endl;
 
 }
 

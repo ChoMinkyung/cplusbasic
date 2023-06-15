@@ -6,7 +6,7 @@ private:
 	int num;
 	int front;
 	int rear;
-	int* que;
+	double* que;
 public:
 	Queue();
 	Queue(int max);
@@ -15,13 +15,13 @@ public:
 	void PlusNum(int n);
 
 	/* 큐에 데이터를 인큐 */
-	int Enque(int x);
+	int Enque(double x);
 
 	/* 큐에서 데이터를 디큐 */
-	int Deque(int* x);
+	int Deque(double* x);
 
 	/* 큐에서 데이터를 피크 */
-	int Peek(int* x);
+	double Peek(double* x);
 
 	/* 모든 데이터 삭제 */
 	void Clear();
@@ -39,12 +39,12 @@ public:
 	int IsFull();
 
 	/* 큐에서 검색 */
-	int Search(int x);
+	int Search(double x);
 
 	/* 모든 데이터 출력 */
 	void Print();
 
-	int Print(int index);
+	double Print(int index);
 
 	/* 큐 종료 */
 	void Terminate();

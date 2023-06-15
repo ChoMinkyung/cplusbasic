@@ -75,16 +75,23 @@ bool Rectangle2D::contains(double x, double y)
 
 bool Rectangle2D::contains(const Rectangle2D& r)
 {
-    double width_max = width > r.width ? width : r.width;
-    double height_max = height > r.height ? height : r.height;
-
-    if (abs(x - r.x) < width_max / 2 && abs(y - r.y) < height_max / 2) return true;
+    if (abs(x - r.x) < abs(width - r.width)/2 && abs(y - r.y) < abs(height-r.height) / 2) return true;
     return false;
 }
 
 bool Rectangle2D::overlaps(const Rectangle2D& r)
 {
-
     if (abs(x - r.x) < width / 2 + r.width / 2 && abs(y - r.y) < height / 2 + r.height / 2) return true;
+    return false;
+}
+
+bool contains(const Rectangle2D& r, const MyPoint& p)
+{
+    double y_max = r.y + r.height / 2;
+    double y_min = r.y - r.height / 2;
+    double x_max = r.x + r.width / 2;
+    double x_min = r.x - r.width / 2;
+    
+    if (p.getY()<y_max && p.getY()>y_min && p.getX()<x_max && p.getX()>x_min) return true;
     return false;
 }

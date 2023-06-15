@@ -13,7 +13,7 @@ Stack::Stack(int max)
     prt = 0;
     this->max = max;
 
-    stk = new int[sizeof(int) * max];
+    stk = new double[sizeof(double) * max+1];
     if (stk == NULL)
     {
         this->max = 0;
@@ -40,7 +40,7 @@ void Stack::PlusSize(int n)
     prt += n;
 }
 
-int Stack::Push(int x)
+int Stack::Push(double x)
 {
     if (IsFull()) return -1;
     stk[prt] = x;
@@ -49,7 +49,7 @@ int Stack::Push(int x)
     return 0;
 }
 
-int Stack::Pop(int* x)
+int Stack::Pop(double* x)
 {
     if (IsEmpty()) return -1;
     *x = stk[prt - 1];
@@ -58,7 +58,7 @@ int Stack::Pop(int* x)
     return 0;
 }
 
-int Stack::Peek(int* x)
+int Stack::Peek(double* x)
 {
     if (IsEmpty()) return -1;
 
@@ -94,7 +94,7 @@ int Stack::IsFull()
     return 0;
 }
 
-int Stack::Search(int x)
+int Stack::Search(double x)
 {
     for (int i = 0; i < prt; i++)
     {
@@ -105,9 +105,14 @@ int Stack::Search(int x)
 
 void Stack::Print()
 {
-    for (int i = 0; i < prt; i++)
+    for(int i=0; i<prt; i++)
         cout << stk[i] << " ";
     cout << endl;
+}
+
+double Stack::Print(int i)
+{
+    return stk[i];
 }
 
 void Stack::Terminate()
@@ -115,3 +120,5 @@ void Stack::Terminate()
     if (stk != NULL) delete[] stk;
     prt = max = 0;
 }
+
+

@@ -43,3 +43,78 @@ int main()
 	}
 	printf("\n");
 }
+
+void TowerOfHanoi(bool number_1, int loc_1, Stack* st)
+{
+	repeat_count++;
+	cout << endl << repeat_count << "번째" << endl;
+	double x = 0;
+	// 1을 찾는다.
+	if (number_1)
+	{
+		if (loc_1 == 0)
+		{
+			st[2].Pop(&x);
+			st[loc_1].Push(x);
+			loc_1++;
+		}
+		else if (loc_1 == 1)
+		{
+			st[0].Pop(&x);
+			st[loc_1].Push(x);
+			loc_1++;
+		}
+		else if (loc_1 == 2)
+		{
+			st[1].Pop(&x);
+			st[loc_1].Push(x);
+			loc_1 = 0;
+		}
+
+		/*
+		for (int i = 0; i < 3; i++)
+		{
+			st[i].Peek(&x);
+			if (!st[i].IsEmpty() && x == 1)
+			{
+				st[i].Pop(&x);
+				st[loc_1].Push(x);
+				break;
+			}
+		}
+		if (loc_1 == 2) loc_1 = 0;
+		else loc_1++;
+		*/
+	}
+	else
+	{
+		double min = 100;
+		int loc = 0;
+		double temp = 0;
+		for (int i = 0; i < 3; i++)
+		{
+			st[i].Peek(&x);
+			if (x != 1 && x < min && !st[i].IsEmpty())
+			{
+				loc = i;
+				min = x;
+			}
+		}
+
+		for (int i = 0; i < 3; i++)
+		{
+			st[i].Peek(&temp);
+			if (temp > min || st[i].IsEmpty()) st[i].Push(min);
+		}
+		st[loc].Pop(&x);
+	}
+
+	Print(&st);
+
+	number_1 = number_1 ? false : true;
+
+	cout << "가득참 ? " << !st[1].IsFull() << " " << !st[2].IsFull() << endl;
+
+	if (!st[1].IsFull() && !st[2].IsFull()) TowerOfHanoi(number_1, loc_1, st);
+
+}
