@@ -1,5 +1,6 @@
 #include <cmath>
 #include "20230614_Q1_Rectangle2D.h"
+#include "20230616_Q1_GeometricObject.h"
 
 Rectangle2D::Rectangle2D()
 {
@@ -82,6 +83,11 @@ bool Rectangle2D::contains(const Rectangle2D& r)
 bool Rectangle2D::overlaps(const Rectangle2D& r)
 {
     if (abs(x - r.x) < width / 2 + r.width / 2 && abs(y - r.y) < height / 2 + r.height / 2) return true;
+    return false;
+}
+
+bool contains(const Circle2D& circle, const MyPoint& point)
+{
     return false;
 }
 

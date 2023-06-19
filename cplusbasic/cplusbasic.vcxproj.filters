@@ -52,6 +52,9 @@
     <Filter Include="소스 파일\20230615">
       <UniqueIdentifier>{e7770a1e-3979-40a4-b92f-7ec6de9c44dc}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\20230616">
+      <UniqueIdentifier>{8bfb50b1-0f6b-48c5-b4d1-b40cf1f4b973}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="20230525_Q1.cpp">
@@ -282,6 +285,24 @@
     <ClCompile Include="20230615_Q2.cpp">
       <Filter>소스 파일\20230615</Filter>
     </ClCompile>
+    <ClCompile Include="20230616.cpp">
+      <Filter>소스 파일\20230616</Filter>
+    </ClCompile>
+    <ClCompile Include="20230616_tabtenn1.cpp">
+      <Filter>소스 파일\20230616</Filter>
+    </ClCompile>
+    <ClCompile Include="20230616_dma.cpp">
+      <Filter>소스 파일\20230616</Filter>
+    </ClCompile>
+    <ClCompile Include="20230616_Q1.cpp">
+      <Filter>소스 파일\20230616</Filter>
+    </ClCompile>
+    <ClCompile Include="20230616_Q1_GeometricObject.cpp">
+      <Filter>소스 파일\20230616</Filter>
+    </ClCompile>
+    <ClCompile Include="20230616_Q2.cpp">
+      <Filter>소스 파일\20230616</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="stock10.h">
@@ -330,6 +351,15 @@
       <Filter>헤더 파일</Filter>
     </ClInclude>
     <ClInclude Include="20230615_string1.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="20230616_tabtenn1.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="20230616_dma.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="20230616_Q1_GeometricObject.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
   </ItemGroup>
