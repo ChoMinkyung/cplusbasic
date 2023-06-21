@@ -55,6 +55,9 @@
     <Filter Include="소스 파일\20230616">
       <UniqueIdentifier>{8bfb50b1-0f6b-48c5-b4d1-b40cf1f4b973}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\20230619">
+      <UniqueIdentifier>{3dd38c15-baf6-4ecf-9a34-15d6aebefde3}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="20230525_Q1.cpp">
@@ -303,6 +306,30 @@
     <ClCompile Include="20230616_Q2.cpp">
       <Filter>소스 파일\20230616</Filter>
     </ClCompile>
+    <ClCompile Include="20230619_Q1_StopWatch.cpp">
+      <Filter>소스 파일\20230619</Filter>
+    </ClCompile>
+    <ClCompile Include="20230619_Q1.cpp">
+      <Filter>소스 파일\20230619</Filter>
+    </ClCompile>
+    <ClCompile Include="20230619_worker0.cpp">
+      <Filter>소스 파일\20230619</Filter>
+    </ClCompile>
+    <ClCompile Include="20230619.cpp">
+      <Filter>소스 파일\20230619</Filter>
+    </ClCompile>
+    <ClCompile Include="20230619_stcktp1.cpp">
+      <Filter>소스 파일\20230619</Filter>
+    </ClCompile>
+    <ClCompile Include="20230619_Q2_QueueTp.cpp">
+      <Filter>소스 파일\20230619</Filter>
+    </ClCompile>
+    <ClCompile Include="20230619_workermi.cpp">
+      <Filter>소스 파일\20230619</Filter>
+    </ClCompile>
+    <ClCompile Include="20230619_Q3.cpp">
+      <Filter>소스 파일\20230619</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="stock10.h">
@@ -360,6 +387,21 @@
       <Filter>헤더 파일</Filter>
     </ClInclude>
     <ClInclude Include="20230616_Q1_GeometricObject.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="20230619_Q1_StopWatch.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="20230619_worker0.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="20230619_stcktp1.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="20230619_Q2_QueueTp.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="20230619_workermi.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
   </ItemGroup>
