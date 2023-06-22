@@ -58,6 +58,9 @@
     <Filter Include="소스 파일\20230619">
       <UniqueIdentifier>{3dd38c15-baf6-4ecf-9a34-15d6aebefde3}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\20230621">
+      <UniqueIdentifier>{7a5813fd-2573-4e21-b414-026380d153d0}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="20230525_Q1.cpp">
@@ -330,6 +333,24 @@
     <ClCompile Include="20230619_Q3.cpp">
       <Filter>소스 파일\20230619</Filter>
     </ClCompile>
+    <ClCompile Include="20230621_Q1.cpp">
+      <Filter>소스 파일\20230621</Filter>
+    </ClCompile>
+    <ClCompile Include="20230621_Q1_.cpp">
+      <Filter>소스 파일\20230621</Filter>
+    </ClCompile>
+    <ClCompile Include="20230621_Tv.cpp">
+      <Filter>소스 파일\20230621</Filter>
+    </ClCompile>
+    <ClCompile Include="20230621.cpp">
+      <Filter>소스 파일\20230621</Filter>
+    </ClCompile>
+    <ClCompile Include="20230621_exc_mean.cpp">
+      <Filter>소스 파일\20230621</Filter>
+    </ClCompile>
+    <ClCompile Include="20230621_Q2.cpp">
+      <Filter>소스 파일\20230621</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="stock10.h">
@@ -402,6 +423,15 @@
       <Filter>헤더 파일</Filter>
     </ClInclude>
     <ClInclude Include="20230619_workermi.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="20230621_Tv.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="20230621_queuetp.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="20230621_exc_mean.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
   </ItemGroup>
