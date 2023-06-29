@@ -70,6 +70,9 @@
     <Filter Include="소스 파일\20230626">
       <UniqueIdentifier>{f5335e53-1fbe-4a36-8a69-f22c481b41c1}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\20230628">
+      <UniqueIdentifier>{4b54f1a5-84a6-46a4-83c5-af5688f7fa5a}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="20230525_Q1.cpp">
@@ -228,7 +231,7 @@
     <ClCompile Include="20230609_Q1.cpp">
       <Filter>소스 파일\20230609</Filter>
     </ClCompile>
-    <ClCompile Include="memo.c">
+    <ClCompile Include="memo.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="20230609.cpp">
@@ -380,6 +383,12 @@
     </ClCompile>
     <ClCompile Include="20230626_Q1Q2.cpp">
       <Filter>소스 파일\20230626</Filter>
+    </ClCompile>
+    <ClCompile Include="20230626_Q3.cpp">
+      <Filter>소스 파일\20230626</Filter>
+    </ClCompile>
+    <ClCompile Include="20230628_Q5.cpp">
+      <Filter>소스 파일\20230628</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
