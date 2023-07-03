@@ -76,6 +76,9 @@
     <Filter Include="소스 파일\20230630">
       <UniqueIdentifier>{23ce7060-3459-403e-beae-cc23e9ccd566}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\20230703">
+      <UniqueIdentifier>{335c08c9-b398-49fc-b81a-d8150af11bdc}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="20230525_Q1.cpp">
@@ -395,6 +398,12 @@
     </ClCompile>
     <ClCompile Include="20230630_Q1.cpp">
       <Filter>소스 파일\20230630</Filter>
+    </ClCompile>
+    <ClCompile Include="20230703_Q1.cpp">
+      <Filter>소스 파일\20230703</Filter>
+    </ClCompile>
+    <ClCompile Include="compare.cpp">
+      <Filter>소스 파일\20230703</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
