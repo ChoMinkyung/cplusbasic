@@ -411,6 +411,27 @@
     <ClCompile Include="20230705_Q1.cpp">
       <Filter>소스 파일\20230705</Filter>
     </ClCompile>
+    <ClCompile Include="20230706_Q1.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="20230707_Q1.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="20230710_Q1.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="20230713_Q1_SingleLinkedList.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="LinkedList.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="20230719_Q1_DoubleLinkedList.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="DoubleLinkedList.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="stock10.h">
@@ -492,6 +513,12 @@
       <Filter>헤더 파일</Filter>
     </ClInclude>
     <ClInclude Include="20230621_exc_mean.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="LinkedList.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="DoubleLinkedList.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
   </ItemGroup>

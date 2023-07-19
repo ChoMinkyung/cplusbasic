@@ -6,6 +6,7 @@
 #include <cstdlib>
 #include <new>
 #include <iomanip>
+#include <vector>
 
 using namespace std;
 
@@ -18,6 +19,7 @@ void SelectionSort2(int len, int* arr);
 void BubbleSortVersion(int* arr, int size);
 void QuickSort(int* arr, int left, int right);
 void HeapSort(int* arr, int size);
+void CountingSort(int* arr, int size);
 
 void Print(int* arr, int len);
 
@@ -56,7 +58,7 @@ int main()
 	Print(temp, len);
 
 	cout << "비교 횟수 : " << n_compare << " 교환 횟수 : " << n_swap << endl;
-	cout << "소요 시간 : " << (double)(sw.getEnd() - sw.getStart()) / CLOCKS_PER_SEC << "s" << endl;
+	cout << "소요 시간 : " << (double)(sw.getEnd() - sw.getStart()) / CLOCKS_PER_SEC << "s   ";
 	cout << "소요 시간 : " << sw.getElapsedTime() << "ms" << endl << endl;
 
 	cout << "버블 정렬" << endl;
@@ -74,7 +76,7 @@ int main()
 	cout << endl << "[정렬 후] : ";
 	Print(temp, len);
 	cout << "비교 횟수 : " << n_compare << " 교환 횟수 : " << n_swap << endl;
-	cout << "소요 시간 : " << (double)(sw.getEnd() - sw.getStart()) / CLOCKS_PER_SEC << "s" << endl;
+	cout << "소요 시간 : " << (double)(sw.getEnd() - sw.getStart()) / CLOCKS_PER_SEC << "s   ";
 	cout << "소요 시간 : " << sw.getElapsedTime() << "ms" << endl << endl;
 
 	cout << "퀵 정렬" << endl;
@@ -92,7 +94,7 @@ int main()
 	cout << endl << "[정렬 후] : ";
 	Print(temp, len);
 	cout << "비교 횟수 : " << n_compare << " 교환 횟수 : " << n_swap << endl;
-	cout << "소요 시간 : " << (double)(sw.getEnd() - sw.getStart()) / CLOCKS_PER_SEC << "s" << endl;
+	cout << "소요 시간 : " << (double)(sw.getEnd() - sw.getStart()) / CLOCKS_PER_SEC << "s   ";
 	cout << "소요 시간 : " << sw.getElapsedTime() << "ms" << endl << endl;
 
 	cout << "힙 정렬" << endl;
@@ -110,8 +112,27 @@ int main()
 	cout << endl << "[정렬 후] : ";
 	Print(temp, len);
 	cout << "비교 횟수 : " << n_compare << " 교환 횟수 : " << n_swap << endl;
-	cout << "소요 시간 : " << (double)(sw.getEnd() - sw.getStart()) / CLOCKS_PER_SEC << "s" << endl;
+	cout << "소요 시간 : " << (double)(sw.getEnd() - sw.getStart()) / CLOCKS_PER_SEC << "s   ";
 	cout << "소요 시간 : " << sw.getElapsedTime() << "ms" << endl << endl;
+
+
+	cout << "도수 정렬" << endl;
+	sw.start();
+	for (double k = 0; k < n; k++)
+	{
+		n_swap = 0, n_compare = 0;
+		for (int i = 0; i < len; i++)
+		{
+			temp[i] = arr[i];
+		}
+		CountingSort(temp, len);
+	}
+	sw.stop();
+	cout << endl << "[정렬 후] : ";
+	Print(temp, len);
+	cout << "소요 시간 : " << (double)(sw.getEnd() - sw.getStart()) / CLOCKS_PER_SEC << "s    ";
+	cout << "소요 시간 : " << sw.getElapsedTime() << "ms" << endl << endl;
+
 }
 
 void SelectionSort1(int len, int* arr)
@@ -225,6 +246,39 @@ void HeapSort(int* arr, int size)
 		size--;
 	}
 	return;
+}
+
+void CountingSort(int* arr, int size)
+{
+	int max = arr[0];
+	int i;
+	for (i = 1; i < size; i++)
+	{
+		if (max < arr[i]) max = arr[i];
+	}
+
+	vector<int> counting(max + 1, 0);
+
+	for (i = 0; i < size; i++)
+	{
+		counting[arr[i]]++;
+
+	}
+
+	int n = 0;
+	for (i = 0; i < size; i++)
+	{
+		if (counting[n]-- > 0)
+		{
+			arr[i] = n;
+
+		}
+		else
+		{
+			n++;
+			i--;
+		}
+	}
 }
 
 void Print(int* arr, int len)
