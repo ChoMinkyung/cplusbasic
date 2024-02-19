@@ -432,6 +432,33 @@
     <ClCompile Include="DoubleLinkedList.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="20230720_ArrayLinkedList.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="20230720_BinaryTree.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="BinaryTree.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="20230721_Hash.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Hash.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="20230925_Q1.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="20230926_Q1.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="231226.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="240116_cloudIot.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="stock10.h">
@@ -519,6 +546,12 @@
       <Filter>헤더 파일</Filter>
     </ClInclude>
     <ClInclude Include="DoubleLinkedList.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="BinaryTree.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Hash.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
   </ItemGroup>
